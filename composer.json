@@ -1,0 +1,26 @@
+{
+  "name": "nlplay/polygonio-php-client",
+  "description": "polygon.io php client",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vladislav Blinov",
+      "email": "ynijar@mail.dev"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6.4",
+    "amphp/websocket-client": "^0.2.4",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PolygonIO\\": "src/"
+    }
+  },
+  "require-dev": {
+    "overtrue/phplint": "^1.1",
+    "phpunit/phpunit": "^8"
+  }
+}

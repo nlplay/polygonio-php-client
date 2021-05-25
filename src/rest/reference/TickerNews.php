@@ -19,6 +19,8 @@ class TickerNews extends RestResource {
      * @return mixed
      */
     public function get($tickerSymbol, $params = []) {
-        return $this->_get('/v1/meta/symbols/'.$tickerSymbol.'/news', $params);
+        $params['ticker'] = $tickerSymbol;
+
+        return $this->_get('/v2/reference/news', $params);
     }
 }
